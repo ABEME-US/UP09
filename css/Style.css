@@ -31,6 +31,9 @@ body {
   row-gap: 9.6rem;
 
 }
+.icon-top{
+  padding-top: 2.6rem;
+}
 
 
 .grid:not(:last-child) {
