@@ -32,9 +32,10 @@
         </ul>
       </nav>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      <button class="btn-mobile-nav" aria-label="Открыть меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </button>
     </header>
 
@@ -615,6 +616,25 @@
           </nav>
         </div>
     </footer>
+	
+	
+    <script>
+      const btnNav = document.querySelector(".btn-mobile-nav");
+      const header = document.querySelector(".header");
+      const navLinks = document.querySelectorAll(".main-nav-link");
+
+      // Открытие / закрытие по кнопке
+      btnNav.addEventListener("click", function () {
+        header.classList.toggle("nav-open");
+      });
+
+      // Закрытие по клику на ссылку
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          header.classList.remove("nav-open");
+        });
+      });
+    </script>
 
   </body>
 </html>
