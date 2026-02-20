@@ -1065,6 +1065,19 @@ body {
     display: none;
   }
 
+  .nav-open .burger-line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.nav-open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-open .burger-line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
@@ -1233,6 +1246,7 @@ body {
     margin-bottom: 4.8rem;
   }
 }
+
 
 
 
