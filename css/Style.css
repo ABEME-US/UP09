@@ -202,9 +202,6 @@ body {
   text-align: center;
 }
 
-strong {
-  font-weight: 500;
-}
 
 .header {
   display: flex;
@@ -1228,3 +1225,4 @@ strong {
     margin-bottom: 4.8rem;
   }
 }
+
